@@ -1,0 +1,10 @@
+:root {
+    --background: antiquewhite;
+    --font: #242526;
+}
+body {
+    background-color: var(--background);
+}
+p {
+    color: var(--font);
+}

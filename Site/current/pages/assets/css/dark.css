@@ -1,0 +1,359 @@
+:root {
+    --background: #242526;
+    --font: antiquewhite;
+    --accent: #333537;
+    --accenthover: #56595b;
+}
+
+@font-face {
+    font-family: "linefont";
+    src: url('fonts/fonts/Linefont/Linefont-VariableFont_wdth,wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "barcode";
+    src: url('fonts/fonts/Libre_Barcode_39_Extended_Text/LibreBarcode39ExtendedText-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "poxel-text";
+    src: url('fonts/fonts/Tiny5/Tiny5-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "ubuntu-reg";
+    src: url('fonts/fonts/Ubuntu_Mono/UbuntuMono-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "ubuntu-bold";
+    src: url('fonts/fonts/Ubuntu_Mono/UbuntuMono-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "poxel-emojis";
+    src: url('fonts/fonts/Yarndings_20/Yarndings20-Regular.ttf') format('truetype');
+}
+
+/*Main Panel for all things*/
+h1, h2, h4, h5, h6, b, strong {
+    color: var(--font);
+    font-family: "ubuntu-bold";
+}
+
+p {
+    color: var(--font);
+    font-family: 'ubuntu-reg';
+}
+
+body {
+    background-color: var(--background);
+}
+
+
+input[type="text"], input[type="email"], input[type="password"] {
+    border-radius: 3px;
+    background-color: var(--accent);
+}
+
+input[type="text"]:hover, input[type="email"]:hover, input[type="password"]:hover {
+    border-radius: 3px;
+    background-color: var(--accenthover);
+    cursor:text;
+}
+
+
+#play-music-button {
+    height: 60px;
+    width: 60px;
+    border: none;
+    background-size: 50% 50%;
+    background-position: center;
+}
+
+.play {
+    background-color: aliceblue;
+}
+
+.pause {
+    background: url("http://downloadicons.net/sites/default/files/pause-icon-14021.png") no-repeat;
+}
+.welcomesign {
+ 
+ text-align: center;
+}
+.signin_up {
+ 
+   left: 50%;
+}
+
+.LSTVButton {
+    font-family: 'ubuntu-reg';
+    color: #fff;
+    background-color: #000;
+    border-color: #fff1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 5px;
+    border-width: 3px;
+}
+
+.GoogleButton {
+    font-family: 'ubuntu-reg';
+    color: #000000;
+    background-color: #dfdfdf;
+    border-color: rgba(255, 0, 0, 0.067);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 5px;
+    border-width: 3px;
+}
+
+.GitHubButton {
+    font-family: 'ubuntu-reg';
+    color: #fff;
+    background-color: #000;
+    border-color: rgba(77, 255, 0, 0.067);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 5px;
+    border-width: 3px;
+}
+
+
+.welcomebanner {
+    .bgImgCenter {
+        background-image: url('img/oiobanner.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+    }
+}
+
+.barcodefont {
+    font-family: "barcode";
+}
+
+.beeperfont {
+    /* A - Bottom line N - Center line Z - Top line */
+    font-family: "linefont";
+}
+
+.beeperfontbig {
+    /* A - Bottom line N - Center line Z - Top line */
+    font-family: "linefont";
+    font-size: 100px;
+    transform: translateX(-20px);
+}
+
+.beeperfontbiganim {
+    /* A - Bottom line N - Center line Z - Top line */
+    font-family: "linefont";
+    font-size: 100px;
+    transform: translateX(-20px);
+    animation: beeper 1s infinite;
+}
+
+.poxeltext {
+    font-family: "poxel-font";
+}
+
+.poxelemojis {
+    font-family: "poxel-emojis";
+}
+
+.ubuntu .noclick {
+    color: crimson;
+}
+
+.load {
+    animation: loadforward 4s infinite;
+    border-radius: 10px;
+    /*background-color: linear-gradient(
+        to right,
+        red 20%,
+        orange 20% 40%,
+        yellow 40% 60%,
+        green 60% 80%,
+        blue 80%
+      );*/
+    /*background-color: linear-gradient(to bottom right, #e66465, #9198e5);*/
+    color: cornflowerblue;
+    display: flex;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 45%;
+    left: 45%;
+}
+
+.sidenav {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay
+    in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    left: 0;
+    background-color: #111;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal
+    scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition:
+        0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The
+    navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+
+}
+
+/* When you mouse over the navigation links, change their
+    color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close
+    button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use
+    this if you want to push the page content to the right when you open the side
+    navigation */
+
+
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+    background-color: rgba(9, 49, 75, 0);
+}
+
+.stopper {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Black background with opacity */
+    z-index: 0;
+    /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+/* On
+    smaller screens, where height is less than 450px, change the style of the
+    sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+
+}
+
+
+/*animations and keyframes*/
+@keyframes loadforward {
+    0% {
+        rotate: 0deg;
+        color: cornflowerblue;
+    }
+
+    25% {
+        rotate: 90deg;
+        color: aqua;
+    }
+
+    50% {
+        rotate: 180deg;
+        color: aquamarine;
+    }
+
+    75% {
+        rotate: 280deg;
+        color: aqua;
+    }
+
+    100% {
+        rotate: 0deg;
+        color: cornflowerblue;
+    }
+}
+
+@keyframes loadbackward {
+    0% {
+        rotate: 0deg;
+        color: aqua;
+    }
+
+    25% {
+        rotate: -90deg;
+        color: cornflowerblue;
+    }
+
+    50% {
+        rotate: -180deg;
+        color: cadetblue;
+    }
+
+    75% {
+        rotate: -280deg;
+        color: cornflowerblue;
+    }
+
+    100% {
+        rotate: -0deg;
+        color: aqua;
+    }
+}
+
+@keyframes beeper {
+    0% {
+        color: black;
+    }
+
+    50% {
+        color: rgb(255, 0, 0);
+    }
+
+    100% {
+        color: rgb(0, 0, 0);
+    }
+}

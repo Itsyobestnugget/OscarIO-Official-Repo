@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<link id="theme" rel="stylesheet" href="assets/css/dark.css">
+<script src="assets/js/menu.js"></script>
+<script src="assets/js/dlswitch.js"></script>
+<script src="assets/js/audio.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+<title>Music | OscarIO ~ Official</title>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="Comingsoon.html">Your account</a>
+  <a href="Home.html">Home</a>
+  <a href="Comingsoon.html">Music</a>
+  <a href="productsv.html">VProducts</a>
+  <a href="credits.html">Credits</a>
+</div>
+<head>
+<!-- Use any element to open the sidenav -->
+<span onclick="openNav()" class="material-symbols-outlined" id="sidna">menu</span>
+</head>
+<body>
+    <!--<figure class="audcontrols">
+    <audio controlssrc="assets/audio/Golden Stars (Official music aud).mp3" id="aud"></audio>
+    <div id="aud-controls" class="controls" data-state="hidden">
+        <button id="play-pause" type="button" data-state="play">Play/Pause</button>
+        <button id="stop" type="button" data-state="stop">Stop</button>
+        <div class="progress">
+          <progress id="progress" value="0" min="0">
+            <span id="progress-bar"></span>
+          </progress>
+        </div>
+        <button id="mute" type="button" data-state="mute">Mute/Unmute</button>
+        <button id="vol-inc" type="button" data-state="vol-up">Vol+</button>
+        <button id="vol-dec" type="button" data-state="vol-down">Vol-</button>
+      </div>
+    </figure>
+  --> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<div id="content-container">
+  <audio id="music">
+    <source src="http://skwaat.com/clips/iloveyou.mp3" type="audio/mpeg">
+  </audio>
+  <button id="play-music-button" class="play" onclick="function playAudio() { var music = document.getElementById('music'); var play_music_button = document.getElementById('play-music-button'); if (music.paused) {music.play();      play_music_button.className = 'pause';    } else {      music.pause();      play_music_button.className = 'play';    }    music.addEventListener('ended',function() {      play_music_button.className = 'play';    });  }  play_music_button.addEventListener('click', playAudio);">play</button>
+</div>     
+
+<div id="main">
+<div id="Overlay" class="stopper"></div>
+</body>
+<img src="assets/svg/settings_80dp_E8EAED_FILL0_wght400_GRAD0_opsz48.svg"class="load" style="image-rendering: crisp-edges; visibility: hidden;" alt="Loading..."></img>
